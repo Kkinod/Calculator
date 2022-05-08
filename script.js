@@ -137,10 +137,28 @@ operators.forEach(operator => {
 backspace.addEventListener('click', LastNumberDelete)
 deleteAll.addEventListener('click', allDelete)
 
+// TEST with drag & drop
+
+const root = document.querySelector("#element");
+
+document.addEventListener("drop", (event)=>{
+    root.style.left = event.pageX + "px";
+    root.style.top = event.pageY + "px";
+})
+
+  document.addEventListener("dragover", function( event ) {
+ 
+      event.preventDefault();
+  }, false);
+
+// add to html: ID, and class: mover and dropzone
+// add to CSS: .calculator -> position: absolute
+// --------------
+
 /* Wciąż do zrobienia:
 - zmienić tak by wszystko ładowało się dopiero po załadowaniu całego DOM
 - naprawić sytację: jeśli dzielimy 0 przez cokolwiek to na wyniku nie da się pracować, tzn. jeśli na wyniku spróbujemy zrobić jakiekolwiek działanie, np. +3, to po wpisaniu +3 wszelkie działania będa zablokowane
 - pierwsze zero można wielokrotnie wpisywać
 - do wyniku można dopisywać cyfry
-
+- i kilka innycch
 */
