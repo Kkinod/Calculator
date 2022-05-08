@@ -14,9 +14,10 @@ body {
 }
 
 .calculator {
+	position: absolute;
 	display: flex;
 	flex-direction: column;
-	padding: 5px;
+	padding: 25px 5px 5px 5px;
 	background-color: rgba(51, 53, 51, 0.3);
     box-shadow: 0px 0px 6px rgba(0, 0, 0, .75);
 }
