@@ -1,4 +1,6 @@
 # Calculator
+Work in progress!
 
+Simple calculator + the ability to move it on the site
 
-<img src="https://kkinod.github.io/Calculator/">LIVE</img>
+<a href="https://kkinod.github.io/Calculator/" >LIVE</a>
